@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Configurator</title>
+  <script type="module" crossorigin src="/ring-configurator/assets/index-Cp_cwLhJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/ring-configurator/assets/index-CtpNEOzl.css">
+</head>
+<body>
+    <div class="canvas"></div>
+    <div class="controls">
+        <label class="block mb-2 text-sm font-bold text-gray-700" for="metalColor">Metal Color:</label>
+        <select id="metalColor" class="w-full p-2 border border-gray-300 rounded">
+            <option value="white">White Gold/Platinum</option>
+            <option value="rose">Rose Gold</option>
+            <option value="gold">Yellow Gold</option>
+        </select>
+
+        <label class="block mb-2 text-sm font-bold text-gray-700" for="carat">Diamond Carat:</label>
+        <input type="range" id="carat" min="5" max="10" step="1" value="5" class="w-full p-2 border border-gray-300 rounded">
+		
+		<label class="block mb-2 text-sm font-bold text-gray-700" for="diamondShape">Diamond Shape:</label>
+		<select id="diamondShape" class="w-full p-2 border border-gray-300 rounded">
+            <option value="round" selected>Round</option>
+            <option value="princess">Princess</option>
+            <option value="emerald">Emerald</option>
+            <option value="asscher">Asscher</option>
+            <option value="cushion">Cushion</option>
+            <option value="oval">Oval</option>
+            <option value="pear">Pear</option>
+            <option value="marquise">Marquise</option>
+            <option value="heart">Heart</option>
+            <option value="radiant">Radiant</option>
+		</select>
+
+        <button id="loadRingModel" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Reload 3D Models
+        </button>
+    </div>
+    
+</body>
+</html>
